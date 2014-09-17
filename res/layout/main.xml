@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+    <LinearLayout
+                  android:orientation="vertical"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+            >
+        <TextView android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Target App"
+                  android:padding="5dp"
+                  android:textColor="@android:color/holo_blue_dark"
+                />
+        <LinearLayout android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:padding="5dp"
+                >
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Not selected"
+                    android:id="@+id/text_app"
+                    android:layout_weight="1"
+                    />
+            <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Select"
+                    android:id="@+id/btn_app"
+                    android:layout_weight="1"
+                    />
+
+        </LinearLayout>
+
+        <TextView android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Login Activity"
+                  android:padding="5dp"
+                  android:textColor="@android:color/holo_blue_dark"
+                />
+        <LinearLayout android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:padding="5dp"
+                >
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Not selected"
+                    android:id="@+id/text_login"
+                    android:layout_weight="1"/>
+            <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Select"
+                    android:id="@+id/btn_login"
+                    android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <TextView android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Success Activity"
+                  android:padding="5dp"
+                  android:textColor="@android:color/holo_blue_dark"
+                />
+
+        <LinearLayout android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:padding="5dp"
+                >
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Not selected"
+                    android:id="@+id/text_success"
+                    android:layout_weight="1"
+                    />
+            <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Select"
+                    android:id="@+id/btn_success"
+                    android:layout_weight="1"
+                    />
+
+        </LinearLayout>
+
+        <TextView android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Failure Activity"
+                  android:padding="5dp"
+                  android:textColor="@android:color/holo_blue_dark"
+                />
+
+        <LinearLayout android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:padding="5dp"
+                >
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Not Selected"
+                    android:id="@+id/text_failure"
+                    android:layout_weight="1"
+                    />
+            <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Select"
+                    android:id="@+id/btn_failure"
+                    android:layout_weight="1"
+                    />
+
+
+        </LinearLayout>
+
+
+        <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_margin="5dp"
+                android:background="#888888"
+                />
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Run Recon "
+                android:id="@+id/btn_next"
+                android:layout_gravity="center_horizontal"/>
+
+        <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_margin="5dp"
+                android:background="#888888"
+                />
+
+        <LinearLayout android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:padding="5dp"
+                >
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Fields"
+                    android:id="@+id/text_fields"
+                    android:layout_weight="1"/>
+            <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Select"
+                    android:id="@+id/btn_input1"
+                    android:layout_weight="1"
+                    />
+        </LinearLayout>
+
+        <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_margin="5dp"
+                android:background="#888888"
+                />
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GO"
+                android:id="@+id/btn_go"
+                android:layout_gravity="center"
+                />
+
+    </LinearLayout>
+</ScrollView>
+

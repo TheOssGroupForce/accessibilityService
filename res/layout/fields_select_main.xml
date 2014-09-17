@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+            >
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Input Fields"
+                android:id="@+id/textView1"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:padding="10dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/black"
+                />
+        <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:id="@+id/listView1"
+                android:layout_below="@id/textView1"
+                android:padding="10dp"
+                />
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Select submit button"
+                android:id="@+id/textView2"
+                android:layout_below="@+id/listView1"
+                android:padding="10dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/black"
+                />
+        <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:id="@+id/listView2"
+                android:layout_below="@id/textView2"
+                android:padding="10dp"
+                />
+    </RelativeLayout>
+
+    <Button android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/done_btn"
+            android:text="Done"
+            />
+</LinearLayout>
