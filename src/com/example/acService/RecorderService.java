@@ -38,8 +38,8 @@ public class RecorderService extends AccessibilityService {
 
     /* Sample user/pass data */
     private String[][] wordlist = {
-            {"admin", "rahul", "res"},
-            {"beep", "tick", "billo", "boom"}
+            {"admin", "rahul","'OR 1=1--"},
+            {"beep",  "boom", "'OR 1=1--"}
     };
 
     private String logA, logB;
@@ -73,7 +73,13 @@ public class RecorderService extends AccessibilityService {
     public void onAccessibilityEvent(AccessibilityEvent event) {
 
 
-//        Log.d("ACSERVICE", event.getClassName().toString());
+        try{
+
+            Log.d("TAGGGGGGG", event.getClassName().toString() + "   " + event.getText().get(0).toString());
+
+        }catch(Exception e){
+            Log.d("TAGGGGGGGG", "Some exception");
+        }
 
         if(event.getEventType() == AccessibilityEvent.TYPE_VIEW_TEXT_CHANGED){
             logIt(event);
@@ -195,7 +201,7 @@ public class RecorderService extends AccessibilityService {
                 /* Arguments to select the existing text, so that we can overwrite it */
                 Bundle arguments = new Bundle();
                 arguments.putInt(AccessibilityNodeInfo.ACTION_ARGUMENT_MOVEMENT_GRANULARITY_INT,
-                        AccessibilityNodeInfo.MOVEMENT_GRANULARITY_WORD);
+                        AccessibilityNodeInfo.MOVEMENT_GRANULARITY_LINE);
                 arguments.putBoolean(AccessibilityNodeInfo.ACTION_ARGUMENT_EXTEND_SELECTION_BOOLEAN,
                         true);
 
